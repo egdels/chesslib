@@ -1,0 +1,8 @@
+# JitPack build for the MoveAPiece development branch only (not part of any upstream PR):
+# JitPack's default Maven wrapper download from Maven Central failed, so install Maven via SDKMAN.
+jdk:
+  - openjdk11
+before_install:
+  - sdk install maven 3.9.9
+install:
+  - mvn -B install -DskipTests
